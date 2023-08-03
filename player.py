@@ -10,7 +10,7 @@ class Player(Turtle):
         self.color("black")
         self.penup()
         self.setheading(90)
-        self.goto(STARTING_POSITION)
+        self.reset()
         self.move_speed = 0.1
 
     def go_up(self):
@@ -22,4 +22,4 @@ class Player(Turtle):
         self.goto(self.xcor(), new_y)
 
     def reset(self):
-        pass
+        self.goto(STARTING_POSITION)
